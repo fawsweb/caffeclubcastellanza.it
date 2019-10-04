@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 		<link rel="stylesheet" href="./res/faccioweb.css">
 		<link rel="stylesheet" href="./res/main.css">
 		<link rel="stylesheet" href="./res/black.css">
@@ -50,7 +51,7 @@
 						<div class="text-center col col-xs-12">
 							<h3><em><i class="fa fa-map-marker"></i></em> Dove e quando?</h3>
                             <p><em><i class="fa fa-fw fa-map-marker"></i></em> via Fratelli Cairoli 16, Castellanza (VA)</p>
-                            <p><em><i class="fa fa-fw fa-clock-o"></i></em> Aperti dal giovedì alla domenica dalle 17:00 alle 2:00.<br>Il giovedì dalle 18:00 all'1:00.</span></p>
+                            <p><em><i class="fa fa-fw fa-clock-o"></i></em> Aperti da venerdì a domenica, dalle 17 alle 02.<br>Il giovedì, dalle 18 all'1.</span></p>
 							<p><em><i class="fa fa-fw fa-phone"></i></em> (+39) 347 6860660</p>
 							<p><em><i class="fa fa-fw fa-envelope-o"></i></em> info@caffeclubcastellanza.it</p>
 							<svg class="divider" width="193px" height="27px" viewBox="0 0 193 27" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -350,6 +351,37 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script>$("#background").backstretch("./res/cocktails.jpg");</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<script>
+			$("#background").backstretch("./res/cocktails.jpg");
+			$(".slider").slick({
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				speed: 1000,
+				accessibility: false,
+				dots: true,
+				arrows: true,
+				autoplay: true,
+				autoplaySpeed: 3000,
+				prevArrow: '<button class="slick-prev" style="min-width: 0; width: 50px; margin: 5px 5px 0 0;"><i class="fa fa-fw fa-chevron-left"></i></button>',
+				nextArrow: '<button class="slick-next" style="min-width: 0; width: 50px; margin: 5px 0 0 5px;"><i class="fa fa-fw fa-chevron-right"></i></button>',
+				responsive: [
+					{
+						breakpoint: 992,
+					 	settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+		</script>
 	</body>
 </html>
