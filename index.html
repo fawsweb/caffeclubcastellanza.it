@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="icon" href="./res/favicon.png">
+		<title>Caffè Club Castellanza</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+		<link rel="stylesheet" href="./res/faccioweb.css">
+		<link rel="stylesheet" href="./res/main.css">
+		<link rel="stylesheet" href="./res/black.css">
+		<style>
+			html, body, p,
+			input, textarea, select,
+			button, a.btn,
+			h1, h2, h3, h4, h5, h6,
+			.h1, .h2, .h3, .h4, .h5, .h6 {
+				font-family: "Open Sans", sans-serif;
+				font-weight: 300;
+			}
+			b, strong {
+				font-weight: 600;
+			}
+			.modal-backdrop { display: none !important; }
+		</style>
+	</head>
+	<body>
+		<div id="background"></div>
+		<div id="main">
+			<div id="menu" class="cleared">
+				<nav id="top-nav-toggle" class="inline-list top-nav">
+					<ul>
+						<li><a href="http://caffeclubcastellanza.it/#menu" class="block toggle-class" data-class="open"><i class="fa fa-bars"></i> Menu</a></li>
+					</ul>
+				</nav>
+				<nav id="top-nav" class="inline-list top-nav">
+					<ul>
+						<li class="active"><a href="http://caffeclubcastellanza.it/" class="block"><i class="fa fa-glass"></i> Home</a></li>
+						<li><a href="https://www.facebook.com/pg/caffeclubofficial/photos/?tab=albums" class="block"><i class="fa fa-camera"></i> Galleria</a></li>
+					</ul>
+				</nav>
+			</div><!-- menu -->
+			<div id="landing" style="margin-top: 80px; margin-bottom: 80px;">
+				<div id="logo">
+					<img class="responsive" src="./res/logo.png">
+				</div>
+				<h1 class="text-shadow text-center">Make the <em>D</em>ifference</h1>
+			</div><!-- landing -->
+			<div id="events" class="fill border-top">
+				<div class="container">
+					<div class="row">
+						<div class="text-center col col-xs-12">
+							<h3><em><i class="fa fa-map-marker"></i></em> Dove e quando?</h3>
+                            <p><em><i class="fa fa-fw fa-map-marker"></i></em> via Fratelli Cairoli 16, Castellanza (VA)</p>
+                            <p><em><i class="fa fa-fw fa-clock-o"></i></em> Aperti dal giovedì alla domenica dalle 17:00 alle 2:00.<br>Il giovedì dalle 18:00 all'1:00.</span></p>
+							<p><em><i class="fa fa-fw fa-phone"></i></em> (+39) 347 6860660</p>
+							<p><em><i class="fa fa-fw fa-envelope-o"></i></em> info@caffeclubcastellanza.it</p>
+							<svg class="divider" width="193px" height="27px" viewBox="0 0 193 27" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#FFFFFF" d=" M 2.28 7.15 C 5.73 1.34 13.46 0.37 19.51 1.81 C 23.02 2.86 25.23 5.99 27.14 8.91 C 24.44 6.80 22.19 3.95 18.90 2.74 C 12.94 1.20 5.14 2.88 2.55 9.06 C 0.95 14.94 6.16 20.17 11.57 21.30 C 20.22 22.90 29.24 21.00 36.96 16.94 C 47.15 11.70 56.49 4.25 67.99 2.03 C 76.36 0.35 86.25 1.11 92.69 7.32 C 95.88 10.20 96.65 15.56 93.87 18.96 C 90.00 23.61 82.67 25.01 77.54 21.61 C 81.12 21.82 84.92 23.19 88.37 21.63 C 92.03 20.12 95.47 16.34 94.45 12.11 C 93.33 8.15 89.21 6.17 85.52 5.25 C 77.25 3.32 68.47 5.17 61.01 8.99 C 49.73 14.62 39.72 23.57 26.86 25.43 C 20.13 26.13 12.53 26.44 6.84 22.15 C 2.27 18.91 -0.15 12.37 2.28 7.15 Z"></path>
+								<path fill="#FFFFFF" d=" M 101.34 6.36 C 108.54 0.58 118.71 0.31 127.31 2.57 C 142.14 6.24 153.24 18.53 168.40 21.28 C 173.43 21.94 178.81 22.43 183.65 20.59 C 188.39 18.77 192.31 13.32 190.10 8.23 C 187.03 2.69 179.83 1.30 174.10 2.73 C 170.81 3.95 168.57 6.80 165.87 8.91 C 167.76 5.99 169.98 2.85 173.50 1.81 C 179.73 0.28 187.92 1.47 191.05 7.79 C 193.65 15.10 188.09 22.93 180.97 24.79 C 171.62 27.17 161.49 25.51 152.99 21.06 C 141.49 15.36 131.30 6.02 118.05 4.69 C 111.72 4.14 104.06 4.56 99.67 9.79 C 96.67 13.62 99.36 18.90 103.20 20.92 C 106.89 23.41 111.40 21.95 115.46 21.60 C 110.16 25.14 102.39 23.51 98.72 18.41 C 96.07 14.51 97.69 9.05 101.34 6.36 Z"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div><!-- events -->
+			<div id="activities" class="fill">
+				<div class="container">
+					<div class="row">
+						<div class="text-center col col-xs-12">
+							<h3>Cosa combiniamo</h3>
+							<p>Tutte le sere offriamo il nostro menu di drink, gelati, dolci, vini e piatti accompagnati da musica selezionata dai nostri DJ e in più proponiamo:</p>
+							<div class="slider slick-initialized slick-slider" data-autoplay="true">
+								<div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1140px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-active" data-slick-index="0" aria-hidden="false" style="width: 380px;">
+									<div class="slide" style="background-color:#2c3e50">
+										<p><b>VEN</b></p>
+										<img class="responsive" src="./res/dolce.jpg">
+										<h4><b>La Dolce Vita</b></h4>
+										<p>La risposta è nel cioccolato...</p>
+										<p><button class="btn" style="background-color:#e67e22" data-toggle="modal" data-target="#dolce"><i class="fa fa-info-circle"></i> Info e Prenotazioni</button></p>
+									</div>
+								</div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 380px;">
+									<div class="slide" style="background-color:#e74c3c">
+										<p><b>GIO, VEN, SAB, DOM</b></p>
+										<img class="responsive" src="./res/fried.jpg">
+										<h4><b>L'Apericena</b></h4>
+										<p>L'inimitabile!</p>
+										<p><button class="btn" style="background-color:#c0392b" data-toggle="modal" data-target="#fried"><i class="fa fa-info-circle"></i> Info e Prenotazioni</button></p>
+									</div>
+								</div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 380px;">
+									<div class="slide" style="background-color:#ffffff;color:#333333;">
+										<p><b>VEN, SAB e DOM</b></p>
+										<img class="responsive" src="./res/slunch.jpg">
+										<h4><b>The Slunch</b></h4>
+										<p>Molto più di una cena</p>
+										<p><button class="btn" style="background-color:#C6D720;" data-toggle="modal" data-target="#slunch"><i class="fa fa-info-circle"></i> Info e Prenotazioni</button></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- activities -->
+			<div class="fill-off border-top-off">
+				<div class="container">
+					<div class="row">
+						<div class="text-center col col-xs-12">
+							<h3>Il Locale</h3>
+							<h4>Caffè Club ogni giorno si impegna per stupire i suoi ospiti con novità sempre al top!</h4>
+							<p>
+								Cocktail &amp; Wine Bar con Dj Set, aperitivo, apericena servito al tavolo e buffet.<br>
+								Gelateria artigianale e opere d'arte di pasticceria.
+							</p>
+							<svg class="divider" width="193px" height="27px" viewBox="0 0 193 27" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#FFFFFF" d=" M 2.28 7.15 C 5.73 1.34 13.46 0.37 19.51 1.81 C 23.02 2.86 25.23 5.99 27.14 8.91 C 24.44 6.80 22.19 3.95 18.90 2.74 C 12.94 1.20 5.14 2.88 2.55 9.06 C 0.95 14.94 6.16 20.17 11.57 21.30 C 20.22 22.90 29.24 21.00 36.96 16.94 C 47.15 11.70 56.49 4.25 67.99 2.03 C 76.36 0.35 86.25 1.11 92.69 7.32 C 95.88 10.20 96.65 15.56 93.87 18.96 C 90.00 23.61 82.67 25.01 77.54 21.61 C 81.12 21.82 84.92 23.19 88.37 21.63 C 92.03 20.12 95.47 16.34 94.45 12.11 C 93.33 8.15 89.21 6.17 85.52 5.25 C 77.25 3.32 68.47 5.17 61.01 8.99 C 49.73 14.62 39.72 23.57 26.86 25.43 C 20.13 26.13 12.53 26.44 6.84 22.15 C 2.27 18.91 -0.15 12.37 2.28 7.15 Z"></path>
+								<path fill="#FFFFFF" d=" M 101.34 6.36 C 108.54 0.58 118.71 0.31 127.31 2.57 C 142.14 6.24 153.24 18.53 168.40 21.28 C 173.43 21.94 178.81 22.43 183.65 20.59 C 188.39 18.77 192.31 13.32 190.10 8.23 C 187.03 2.69 179.83 1.30 174.10 2.73 C 170.81 3.95 168.57 6.80 165.87 8.91 C 167.76 5.99 169.98 2.85 173.50 1.81 C 179.73 0.28 187.92 1.47 191.05 7.79 C 193.65 15.10 188.09 22.93 180.97 24.79 C 171.62 27.17 161.49 25.51 152.99 21.06 C 141.49 15.36 131.30 6.02 118.05 4.69 C 111.72 4.14 104.06 4.56 99.67 9.79 C 96.67 13.62 99.36 18.90 103.20 20.92 C 106.89 23.41 111.40 21.95 115.46 21.60 C 110.16 25.14 102.39 23.51 98.72 18.41 C 96.07 14.51 97.69 9.05 101.34 6.36 Z"></path>
+							</svg>
+						</div>
+					</div>
+					<div class="row" id="rooms">
+						<div class="text-center col col-xs-12">
+							<div class="slider slick-initialized slick-slider">
+								<div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1140px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-active" data-slick-index="0" aria-hidden="false" style="width: 380px;">
+									<div class="slide">
+										<img class="responsive" src="./res/newexp.jpg">
+										<h4><b>La Nouvelle Expérience</b></h4>
+										<p>Scopri la nuova sala</p>
+										<p><button class="btn btn-danger" data-toggle="modal" data-target="#slunch-video"><i class="fa fa-video-camera"></i> Video</button></p>
+									</div>
+								</div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 380px;">
+									<div class="slide">
+										<img class="responsive" src="./res/ilclub.jpg">
+										<h4><b>Il Caffè Club</b></h4>
+										<p>L'inconfondibile atmosfera</p>
+									</div>
+								</div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 380px;">
+									<div class="slide">
+										<img class="responsive" src="./res/jadore.jpg">
+										<h4><b>J'adore l'été</b></h4>
+										<p>Il dehors estivo, la nostra estate!</p>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="text-center row">
+					<div class="col col-xs-6 col-sm-3">
+						<a href="http://caffeclubcastellanza.it/locale#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#coffee">
+							<b>COFFEE<br>BREAK</b><br>
+							<i class="fa fa-coffee"></i> <i class="fa fa-group"></i>
+						</a>
+					</div>
+					<div class="col col-xs-6 col-sm-3">
+						<a href="http://caffeclubcastellanza.it/locale#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#weddings">
+							<b>MATRIMONI<br>RICEVIMENTI</b><br>
+							<i class="fa fa-female"></i> <i class="fa fa-male"></i>
+						</a>
+					</div>
+					<div class="col col-xs-6 col-sm-3">
+						<a href="http://caffeclubcastellanza.it/locale#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#birthdays">
+							<b>COMPLEANNI<br>LAUREE</b><br>
+							<i class="fa fa-birthday-cake"></i> <i class="fa fa-graduation-cap"></i>
+						</a>
+					</div>
+					<div class="col col-xs-6 col-sm-3">
+						<a href="http://caffeclubcastellanza.it/locale#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#communions">
+							<b>COMUNIONI<br>CRESIME</b><br>
+							<i class="fa fa-child"></i> <i class="fa fa-star-o"></i>
+						</a>
+					</div>
+				</div>
+			</div><!-- il-locale -->
+		</div><!-- main -->
+		<footer class="text-center">
+			Copyright © 2014 Caffè Club P.IVA 01807750128
+		</footer>
+		<div class="modals">
+			<div class="modal fade" id="coffee" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+			   			<div class="modal-header">
+			    			<button type="button" class="close" data-dismiss="modal">Chiudi <span>×</span></button>
+			   			</div>
+			    		<div class="text-left modal-body">
+							<h3>
+								Coffee Break
+							</h3>
+							<p>Il servizio <b>Coffee Break</b> del Caffè Club prevede:</p>
+							<ul>
+								<li><b>Buffet salato</b> con fantasia di bocconcini e paninetti al latte, salatini rustici assortiti, pizzette e focaccine.</li>
+								<li><b>Buffet dolce</b> con cornetti di sfoglia al cioccolato o marmellata, pasticceria mignon secca, torte da forno e torte farcite.</li>
+								<li><b>Bevande fredde</b> con acqua minerale naturale e gassata, succhi di frutta (arancia e ananas), coca cola, the freddo e bibite varie.</li>
+								<li><b>Bevande calde</b> con caffè espresso e macchina da caffè a cialde, dek, orzo, cappuccino e the caldo.</li>
+							</ul>
+							<p>Il <b>servizio catering</b> comprende tovaglie in tessuto e posaterie in plastica, illuminazione ambient e soft music, oltre a un’accurata <b>pulizia finale</b>.</p>
+			    		</div>
+			    		<div class="text-center modal-footer">
+			    			<p><small>Per info e prenotazioni <span class="nowrap"><b>347 6860660</b></span> o <b>info@caffeclubcastellanza.it</b></small></p>
+			    		</div>
+			    	</div>
+			 	 </div>
+			</div>
+			<div class="modal fade" id="birthdays" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+			   			<div class="modal-header">
+			    			<button type="button" class="close" data-dismiss="modal">Chiudi <span>×</span></button>
+			   			</div>
+			    		<div class="text-left modal-body">
+							<h3>
+								Compleanni e Lauree
+							</h3>
+                            <p>Festeggia i giorni più importanti della tua vita con Caffè Club:</p>
+							<p>
+								Drink alcolico o analcolico, 8,5 € / persona.<br>
+								Drink alcolico o analcolico con aperitivo a buffet 13 € / persona.<br>
+								Presentazione, taglio e servizio della torta 1 € / persona.
+							</p>
+							<p><b>In più...</b></p>
+							<p>In base ai vostri desideri è possibile aggiungere spumanti, vini, dolci, piatti e bevande oppure creare eventi su misura, con sala a scelta o locale interamente dedicati.</p>
+			    		</div>
+			    		<div class="text-center modal-footer">
+			    			<p><small>Per info e prenotazioni <span class="nowrap"><b>347 6860660</b></span> o <b>info@caffeclubcastellanza.it</b></small></p>
+			    		</div>
+			    	</div>
+			 	 </div>
+			</div>
+			<div class="modal fade" id="communions" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+			   			<div class="modal-header">
+			    			<button type="button" class="close" data-dismiss="modal">Chiudi <span>×</span></button>
+			   			</div>
+			    		<div class="text-left modal-body">
+							<h3>Cresime e Comunioni</h3>
+							<p>
+							Abbiamo un mondo di idee per celebrare la tua cresima o la tua comunione!
+							</p>
+							<p>
+							Contattaci e componi la formula che preferisci, ti proporrermo la location ideale e idee grastronomiche che spazieranno dal finger food ai primi piatti caldi; dai cocktails ai vini spumanti; dai dolci alla frutta; dalla piccola gastronomia ai taglieri più elaborati!
+							</p>
+			    		</div>
+			    		<div class="text-center modal-footer">
+			    			<p><small>Per info e prenotazioni <span class="nowrap"><b>347 6860660</b></span> o <b>info@caffeclubcastellanza.it</b></small></p>
+			    		</div>
+			    	</div>
+			 	 </div>
+			</div>
+			<div class="modal fade" id="weddings" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+			   			<div class="modal-header">
+			    			<button type="button" class="close" data-dismiss="modal">Chiudi <span>×</span></button>
+			   			</div>
+			    		<div class="text-left modal-body">
+			    			<h3>
+								Matrimoni e Ricevimenti
+							</h3>
+							<p>In base ai vostri desideri creiamo eventi su misura per voi.</p>
+							<p>Sala o locale interamente dedicati, estivo o invernale.</p>
+			    		</div>
+			    		<div class="text-center modal-footer">
+			    			<p><small>Per info e prenotazioni <span class="nowrap"><b>347 6860660</b></span> o <b>info@caffeclubcastellanza.it</b></small></p>
+			    		</div>
+			    	</div>
+			 	 </div>
+			</div>
+			<div class="modal fade" id="dolce" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+			   			<div class="modal-header">
+			    			<button type="button" class="close" data-dismiss="modal">Chiudi <span>×</span></button>
+			   			</div>
+			    		<div class="text-left modal-body">
+			    			<img class="responsive" src="./res/dolce.jpg">
+							<h3>La Dolce Vita</h3>
+							<p>Dalle 22:00, ogni venerdì, offriamo un ricco buffet di dolci a vostra completa disposizione compreso nel prezzo della prima consumazione!</p>
+							<p><b>e... dalla seconda consumazione solo 5 €!</b></p>
+							<p><i>La risposta è nel cioccolato...<br>Non importa quale fosse la domanda...</i></p>
+			    		</div>
+			    		<div class="text-center modal-footer">
+			    			<p><small>Per info e prenotazioni <span class="nowrap"><b>347 6860660</b></span> o <b>info@caffeclubcastellanza.it</b></small></p>
+			    		</div>
+			    	</div>
+			 	 </div>
+			</div>
+			<div class="modal fade" id="fried" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+			   			<div class="modal-header">
+			    			<button type="button" class="close" data-dismiss="modal">Chiudi <span>×</span></button>
+			   			</div>
+			    		<div class="text-left modal-body">
+			    			<img class="responsive" src="./res/fried.jpg">
+							<h3>L'Apericena</h3>
+							<p>Dalle 19:00 ogni Giovedì, Venerdì, Sabato e Domenica l'Aperitivo a Buffet per eccellenza!</p>
+							<p>Piatti caldi e freddi con specialità cucinate al momento dai nostri Chef.</p><p>Giovedì, Venerdì, Sabato e Domenica a soli 13 € con Live Cooking Show.<br>La prima consumazione è sempre inclusa.</p>
+							<p><b>e... dalla seconda consumazione solo 5 €!</b></p>
+							<h4><b>Per continuare...</b></h4>
+							<p>Dj Set fino a sera e il Sabato <b>brioche di mezzanotte</b>!</p>
+			    		</div>
+			    		<div class="text-center modal-footer">
+			    			<p><small>Per info e prenotazioni <span class="nowrap"><b>347 6860660</b></span> o <b>info@caffeclubcastellanza.it</b></small></p>
+			    		</div>
+			    	</div>
+			 	 </div>
+			</div>
+			<div class="modal fade" id="slunch" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+			   			<div class="modal-header">
+			    			<button type="button" class="close" data-dismiss="modal">Chiudi <span>×</span></button>
+			   			</div>
+			    		<div class="text-left modal-body">
+			    			<img class="responsive" src="./res/slunch.jpg">
+							<h3>The Slunch</h3>
+							<p>Molto più di una cena!</p>
+							<p>La <i>Nouvelle Expérience</i> Caffè Club propone ricchi piatti di alto livello serviti al tavolo con diverse portate di antipasti, primi, secondi, frutta, formaggi, dolci.</p>
+							<p>Tutto questo a soli 25 € a persona con <b>acqua, caffè e...<br>due consumazioni comprese nel prezzo</b>!</p>
+							<p>Non lasciarti sfuggire la nuova esperienza targata Caffè Club.</p>
+			    		</div>
+			    		<div class="text-center modal-footer">
+			    			<p><small>Per info e prenotazioni <span class="nowrap"><b>347 6860660</b></span> o <b>info@caffeclubcastellanza.it</b></small></p>
+			    		</div>
+			    	</div>
+			 	 </div>
+			</div>
+			<div class="modal fade" id="slunch-video" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+			   			<div class="modal-header">
+			    			<button type="button" class="close" data-dismiss="modal">Chiudi <span>×</span></button>
+			   			</div>
+			    		<div class="text-left modal-body">
+							<h3>The Slunch</h3>
+							<p>
+								<video style="display:block;max-width:90%;width:720px;height:auto;margin:0 auto;" controls="">
+									<source src="./res/slunch.mp4" type="video/mp4">
+									<source src="./res/slunch.ogv" type="video/ogg">
+									<source src="./res/slunch.webm" type="video/webm">
+									ERRORE: Il tuo dispositivo non supporta i video.
+								</video>
+							</p>
+							<hr>
+							<p>Porta l'apericena a un altro livello:</p>
+							<h4>The Slunch, molto più di una cena!</h4>
+							<p>La <i>Nouvelle Expérience</i> Caffè Club propone ricchi piatti di alto livello serviti al tavolo con diverse portate di antipasti, primi, secondi, frutta, formaggi, dolci, acqua e caffè.</p>
+							<p>Tutto questo a soli 25 € a persona con <b>due consumazioni comprese nel prezzo</b>!</p>
+							<p>Non lasciarti sfuggire la nuova esperienza targata Caffè Club.</p>
+			    		</div>
+			    		<div class="text-center modal-footer">
+			    			<p><small>Per info e prenotazioni <span class="nowrap"><b>347 6860660</b></span> o <b>info@caffeclubcastellanza.it</b></small></p>
+			    		</div>
+			    	</div>
+			 	 </div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script>$("#background").backstretch("./res/cocktails.jpg");</script>
+	</body>
+</html>
