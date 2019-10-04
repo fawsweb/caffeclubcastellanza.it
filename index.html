@@ -31,25 +31,20 @@
 		<div id="background"></div>
 		<div id="main">
 			<div id="menu" class="cleared">
-				<nav id="top-nav-toggle" class="inline-list top-nav">
-					<ul>
-						<li><a href="http://caffeclubcastellanza.it/#menu" class="block toggle-class" data-class="open"><i class="fa fa-bars"></i> Menu</a></li>
-					</ul>
-				</nav>
 				<nav id="top-nav" class="inline-list top-nav">
 					<ul>
-						<li class="active"><a href="http://caffeclubcastellanza.it/" class="block"><i class="fa fa-glass"></i> Home</a></li>
+						<li class="active"><a href="http://caffeclubcastellanza.it" class="block"><i class="fa fa-glass"></i> Home</a></li>
 						<li><a href="https://www.facebook.com/pg/caffeclubofficial/photos/?tab=albums" class="block"><i class="fa fa-camera"></i> Galleria</a></li>
 					</ul>
 				</nav>
-			</div><!-- menu -->
+			</div>
 			<div id="landing" style="margin-top: 80px; margin-bottom: 80px;">
 				<div id="logo">
 					<img class="responsive" src="./res/logo.png">
 				</div>
 				<h1 class="text-shadow text-center">Make the <em>D</em>ifference</h1>
-			</div><!-- landing -->
-			<div id="events" class="fill border-top">
+			</div>
+			<div class="fill border-top">
 				<div class="container">
 					<div class="row">
 						<div class="text-center col col-xs-12">
@@ -64,16 +59,12 @@
 							</svg>
 						</div>
 					</div>
-				</div>
-			</div><!-- events -->
-			<div id="activities" class="fill">
-				<div class="container">
 					<div class="row">
 						<div class="text-center col col-xs-12">
 							<h3>Cosa combiniamo</h3>
 							<p>Tutte le sere offriamo il nostro menu di drink, gelati, dolci, vini e piatti accompagnati da musica selezionata dai nostri DJ e in più proponiamo:</p>
-							<div class="slider slick-initialized slick-slider" data-autoplay="true">
-								<div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1140px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-active" data-slick-index="0" aria-hidden="false" style="width: 380px;">
+							<div class="slider">
+								<div class="slick-slide">
 									<div class="slide" style="background-color:#2c3e50">
 										<p><b>VEN</b></p>
 										<img class="responsive" src="./res/dolce.jpg">
@@ -81,7 +72,8 @@
 										<p>La risposta è nel cioccolato...</p>
 										<p><button class="btn" style="background-color:#e67e22" data-toggle="modal" data-target="#dolce"><i class="fa fa-info-circle"></i> Info e Prenotazioni</button></p>
 									</div>
-								</div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 380px;">
+								</div>
+								<div class="slick-slide">
 									<div class="slide" style="background-color:#e74c3c">
 										<p><b>GIO, VEN, SAB, DOM</b></p>
 										<img class="responsive" src="./res/fried.jpg">
@@ -89,7 +81,8 @@
 										<p>L'inimitabile!</p>
 										<p><button class="btn" style="background-color:#c0392b" data-toggle="modal" data-target="#fried"><i class="fa fa-info-circle"></i> Info e Prenotazioni</button></p>
 									</div>
-								</div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 380px;">
+								</div>
+								<div class="slick-slide">
 									<div class="slide" style="background-color:#ffffff;color:#333333;">
 										<p><b>VEN, SAB e DOM</b></p>
 										<img class="responsive" src="./res/slunch.jpg">
@@ -101,10 +94,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div><!-- activities -->
-			<div class="fill-off border-top-off">
-				<div class="container">
 					<div class="row">
 						<div class="text-center col col-xs-12">
 							<h3>Il Locale</h3>
@@ -121,21 +110,23 @@
 					</div>
 					<div class="row" id="rooms">
 						<div class="text-center col col-xs-12">
-							<div class="slider slick-initialized slick-slider">
-								<div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1140px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-active" data-slick-index="0" aria-hidden="false" style="width: 380px;">
+							<div class="slider">
+								<div class="slick-slide">
 									<div class="slide">
 										<img class="responsive" src="./res/newexp.jpg">
 										<h4><b>La Nouvelle Expérience</b></h4>
 										<p>Scopri la nuova sala</p>
 										<p><button class="btn btn-danger" data-toggle="modal" data-target="#slunch-video"><i class="fa fa-video-camera"></i> Video</button></p>
 									</div>
-								</div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 380px;">
+								</div>
+								<div class="slick-slide">
 									<div class="slide">
 										<img class="responsive" src="./res/ilclub.jpg">
 										<h4><b>Il Caffè Club</b></h4>
 										<p>L'inconfondibile atmosfera</p>
 									</div>
-								</div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 380px;">
+								</div>
+								<div class="slick-slide">
 									<div class="slide">
 										<img class="responsive" src="./res/jadore.jpg">
 										<h4><b>J'adore l'été</b></h4>
@@ -145,38 +136,35 @@
 							</div>	
 						</div>
 					</div>
+					<div class="text-center row">
+						<div class="col col-xs-6 col-sm-3">
+							<a href="#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#coffee">
+								<b>COFFEE<br>BREAK</b><br>
+								<i class="fa fa-coffee"></i> <i class="fa fa-group"></i>
+							</a>
+						</div>
+						<div class="col col-xs-6 col-sm-3">
+							<a href="#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#weddings">
+								<b>MATRIMONI<br>RICEVIMENTI</b><br>
+								<i class="fa fa-female"></i> <i class="fa fa-male"></i>
+							</a>
+						</div>
+						<div class="col col-xs-6 col-sm-3">
+							<a href="#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#birthdays">
+								<b>COMPLEANNI<br>LAUREE</b><br>
+								<i class="fa fa-birthday-cake"></i> <i class="fa fa-graduation-cap"></i>
+							</a>
+						</div>
+						<div class="col col-xs-6 col-sm-3">
+							<a href="#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#communions">
+								<b>COMUNIONI<br>CRESIME</b><br>
+								<i class="fa fa-child"></i> <i class="fa fa-star-o"></i>
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="text-center row">
-					<div class="col col-xs-6 col-sm-3">
-						<a href="http://caffeclubcastellanza.it/locale#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#coffee">
-							<b>COFFEE<br>BREAK</b><br>
-							<i class="fa fa-coffee"></i> <i class="fa fa-group"></i>
-						</a>
-					</div>
-					<div class="col col-xs-6 col-sm-3">
-						<a href="http://caffeclubcastellanza.it/locale#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#weddings">
-							<b>MATRIMONI<br>RICEVIMENTI</b><br>
-							<i class="fa fa-female"></i> <i class="fa fa-male"></i>
-						</a>
-					</div>
-					<div class="col col-xs-6 col-sm-3">
-						<a href="http://caffeclubcastellanza.it/locale#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#birthdays">
-							<b>COMPLEANNI<br>LAUREE</b><br>
-							<i class="fa fa-birthday-cake"></i> <i class="fa fa-graduation-cap"></i>
-						</a>
-					</div>
-					<div class="col col-xs-6 col-sm-3">
-						<a href="http://caffeclubcastellanza.it/locale#" class="block fill border-bottom service-selector" data-toggle="modal" data-target="#communions">
-							<b>COMUNIONI<br>CRESIME</b><br>
-							<i class="fa fa-child"></i> <i class="fa fa-star-o"></i>
-						</a>
-					</div>
-				</div>
-			</div><!-- il-locale -->
-		</div><!-- main -->
-		<footer class="text-center">
-			Copyright © 2014 Caffè Club P.IVA 01807750128
-		</footer>
+			</div>
+		</div>
 		<div class="modals">
 			<div class="modal fade" id="coffee" tabindex="-1">
 				<div class="modal-dialog">
