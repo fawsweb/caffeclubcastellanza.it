@@ -1,0 +1,209 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+.cleared:before,
+.cleared:after {
+    content: " ";
+    display: table;
+}
+.cleared:after {
+    clear: both !important;
+}
+.pull-left {
+    float: left !important;
+}
+.pull-right {
+    float: right !important;
+}
+.nowrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.text-center {
+    text-align: center !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-shadow {
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+.hidden, .hide {
+    display: none !important;
+}
+.showed, .show {
+    display: block !important;
+}
+.invisible {
+    visibility: hidden !important;
+}
+.fixed {
+    position: fixed !important;
+}
+.hidden-text, .hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+a.block {
+    display: block;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+.outlined {
+    outline: 1px dashed grey;
+}
+.keep-ratio,
+.keep-ratio-or-fit {
+    position: relative;
+    width: 100%;
+}
+.keep-ratio:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.keep-ratio-or-fit:before {
+    content: "";
+    float: left;
+    padding-bottom: 100%;
+}
+.keep-ratio-or-fit:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    .keep-ratio > div,
+    .keep-ratio-or-fit > div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+.div-center {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.div-middle {
+    display: block;
+    position: absolute;
+    top: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.background-cover {
+    background: url('') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod='scale')";
+}
+img.responsive {
+    width: 100%;
+    height: auto;
+}
+.inline-list {
+    position: relative;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+    .inline-list ul {
+        display: block;
+        position: relative;
+        right: 50%;
+        margin: 0;
+        padding: 0;
+        float: right;
+        clear: left;
+        list-style: none;
+    }
+        .inline-list li {
+            display: block;
+            position: relative;
+            left: 50%;
+            margin: 0;
+            padding: 0;
+            float: left;
+            list-style: none;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+.offcanvas-wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+    .offcanvas-wrap > .oncanvas {
+        width: 100%;
+        padding: 15px;
+    }
+    .offcanvas-wrap > .offcanvas {
+        position: absolute;
+        width: 260px;
+        height: 100%;
+        padding: 15px;
+        overflow: auto;
+        z-index: 0;
+        -webkit-overflow-scrolling: touch;
+    }
+    .offcanvas-wrap > .offcanvas-left {
+        left: -260px;
+    }
+    .offcanvas-wrap > .offcanvas-right {
+        right: -260px;
+    }
+    .offcanvas-wrap.move-right > .offcanvas-left {
+        left: 0px;
+    }
+    .offcanvas-wrap.move-left > .offcanvas-right {
+        right: 0px;
+    }
+    /* if browser supports css transformations, reset offcanvas-left and offcanvas-right */
+    html.csstransforms .offcanvas-wrap.move-right > .offcanvas-left {
+        left: -260px !important;
+    }
+    html.csstransforms .offcanvas-wrap.move-left > .offcanvas-right {
+        right: -260px !important;
+    }
+    /* if browser supports css transformations, do them! */
+    html.csstransforms  .offcanvas-wrap.move-right > .offcanvas-left,
+                        .offcanvas-wrap.move-right > .oncanvas {
+        -webkit-transform: translateX(260px);
+            -ms-transform: translateX(260px);
+                transform: translateX(260px);
+    }
+    html.csstransforms  .offcanvas-wrap.move-left > .offcanvas-right,
+                        .offcanvas-wrap.move-left > .oncanvas {
+        -webkit-transform: translateX(-260px);
+            -ms-transform: translateX(-260px);
+                transform: translateX(-260px);
+    }
+    .offcanvas-wrap > .offcanvas,
+    .offcanvas-wrap > .oncanvas {
+        -webkit-transition: all 250ms linear;
+           -moz-transition: all 250ms linear;
+            -ms-transition: all 250ms linear;
+             -o-transition: all 250ms linear;
+                transition: all 250ms linear;
+    }

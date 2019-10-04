@@ -1,0 +1,181 @@
+html, body {
+	color: #fff;
+	background-color: #000;
+}
+em,
+a, a:active,
+a:hover, a:visited {
+	color: #ec4d42;
+	text-decoration: none;
+	font-style: inherit;
+	outline: none !important;
+}
+.btn {
+	color: #fff !important;
+}
+small {
+	color: #aaa !important;
+}
+.modal small {
+	color: #888 !important;
+}
+input.see-through, textarea.see-through {
+	border: 2px solid white !important;
+	color: #fff !important;
+	background: transparent !important;
+}
+.fill {
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.8);
+}
+.border-top {
+	border-top: 2px solid #ec4d42;
+}
+.border-right {
+	border-right: 2px solid #ec4d42;
+}
+.border-bottom {
+	border-bottom: 2px solid #ec4d42;
+}
+.border-left {
+	border-left: 2px solid #ec4d42;
+}
+.modal {
+	color: #333333;
+}
+/**/
+	#cover {
+		background: #000 url(http://caffeclubcastellanza.it/img/loader.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://caffeclubcastellanza.it/img/loader.jpg", sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://caffeclubcastellanza.it/img/loader.jpg', sizingMethod='scale')";
+	}
+
+			.top-nav {
+				background: rgb(0,0,0);
+				background: rgba(0,0,0,0.6);
+			}
+					.top-nav li.active,
+					#top-nav li:hover {
+						background: #2F2F2F;
+						background: rgba(255,255,255,0.2);
+						border-bottom: 2px solid #ec4d42;
+					}
+@media (max-width: 767px) {
+			#top-nav {
+				border-bottom: 2px solid #ec4d42;
+			}
+					.top-nav li.active,
+					#top-nav li:hover {
+						background: #2F2F2F;
+						background: rgba(255,255,255,0.2);
+						border-bottom: 2px solid transparent;
+					}
+}
+			.sub-nav {
+				background: rgb(0,0,0);
+				background: rgba(0,0,0,1);
+			}
+					.sub-nav li.active,
+					.sub-nav li:hover {
+						background: #2F2F2F;
+						background: rgba(255,255,255,0.4);
+					}
+							.slick-prev, .slick-next {
+								background: #2F2F2F;
+								background: rgba(255,255,255,0.6);
+								color: #000 !important;
+							}
+							.slick-prev:hover, .slick-next:hover {
+								background: #2F2F2F;
+								background: rgba(255,255,255,1);
+								color: #000 !important;
+							}
+							.slick-disabled {
+								opacity: 0.1;
+							}
+							.slick-dots
+							{
+							    position: absolute;
+							    bottom: -45px;
+
+							    display: block;
+
+							    width: 100%;
+							    padding: 0;
+
+							    list-style: none;
+
+							    text-align: center;
+							}
+							.slick-dots li
+							{
+							    position: relative;
+
+							    display: inline-block;
+
+							    width: 20px;
+							    height: 20px;
+							    margin: 0 5px;
+							    padding: 0;
+
+							    cursor: pointer;
+							}
+							.slick-dots li button
+							{
+							    font-size: 0;
+							    line-height: 0;
+
+							    display: block;
+
+							    width: 20px;
+							    height: 20px;
+							    padding: 5px;
+
+							    cursor: pointer;
+
+							    color: transparent;
+							    border: 0;
+							    outline: none;
+							    background: transparent;
+							}
+							.slick-dots li button:hover,
+							.slick-dots li button:focus
+							{
+							    outline: none;
+							}
+							.slick-dots li button:hover:before,
+							.slick-dots li button:focus:before
+							{
+							    opacity: 1;
+							}
+							.slick-dots li button:before
+							{
+							    font-family: 'sans-serif';
+							    font-size: 32px;
+							    line-height: 1;
+
+							    position: absolute;
+							    top: 0;
+							    left: 0;
+
+							    width: 20px;
+							    height: 20px;
+
+							    content: '•';
+							    text-align: center;
+
+							    opacity: .5;
+							    color: white;
+
+							    -webkit-font-smoothing: antialiased;
+							    -moz-osx-font-smoothing: grayscale;
+							}
+							.slick-dots li.slick-active button:before
+							{
+							    opacity: 1;
+							    color: white;
+							}

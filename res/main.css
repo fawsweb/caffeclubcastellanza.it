@@ -1,0 +1,246 @@
+h1 {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+input, textarea, select, button, .btn {
+	border: 0 !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+.btn, .form-control {
+	max-width: 80%;
+	margin: 0 auto;
+}
+.container {
+	max-width: 1280px;
+}
+@media (max-width: 991px) {
+	.container {
+		max-width: 800px;
+	}
+}
+.row {
+	margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+	.row {
+		margin-bottom: 0;
+	}
+	.col {
+		margin-bottom: 40px;
+	}
+}
+img.responsive {
+	max-width: 480px;
+}
+.modal, .modal-open {
+	padding: 0 !important;
+}
+	.modal-header {
+		padding: 10px 10px 10px 0;
+		overflow: hidden;
+	}
+		.modal .close {
+			margin-top: 0px;
+		}
+		.modal img.responsive {
+			max-width: 100%;
+		}
+	.modal-footer {
+		padding: 10px 10px 0;
+	}
+footer {
+	font-size: 80%;
+	padding: 2px 0;
+}
+@media (max-width: 767px) {
+	footer {
+		margin-bottom: 46px;
+		padding: 10px 0;
+	}
+}
+/**/
+	#cover {
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+	}
+		#cover > img {
+			display: block;
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			top: 50%;
+			left: 50%;
+			margin-top: -30px;
+			margin-left: -30px;
+		}
+	#background {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+	}
+	#map-canvas-wrap {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+		background-color: #ccc;
+	}
+		#map-canvas {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+			background-color: #ccc;
+		}
+	#vignette {
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		box-shadow: 0 0 200px rgba(0,0,0,0.28) inset;
+		pointer-events: none;
+	}
+	#main {
+		position: relative;
+		z-index: 3;
+	}
+		#menu {
+			position: relative;
+			z-index: 4;
+		}
+			#top-nav-toggle {
+				display: none;
+			}
+					.top-nav li {
+						min-width: 120px;
+						border-bottom: 2px solid transparent;
+						line-height: 1;
+					}
+						.top-nav a {
+							padding: 15px 0;
+						}
+					.sub-nav li {
+						width: 105px;
+						line-height: 1;
+					}
+						.sub-nav a {
+							padding: 12px 0;
+						}
+@media (max-width: 767px) { /* xs */
+			#top-nav-toggle {
+				display: block;
+			}
+			#top-nav {
+				display: none;
+			}
+			#menu.open #top-nav {
+				display: block;
+			}
+				.top-nav ul {
+					width: 100%;
+				}
+					.top-nav li {
+						width: 100%;
+					}
+			.sub-nav {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+			}
+					.sub-nav li {
+						width: 75px;
+						line-height: 1;
+					}
+						.sub-nav a {
+							padding: 16px 0;
+						}
+}
+		#landing {
+			margin: 60px auto;
+		}
+			#logo {
+				width: 200px;
+				height: 200px;
+				padding: 42px 14px;
+				border-radius: 150px;
+				background: #000;
+				margin: 20px auto;
+			}
+						#fb-cover {
+							width: 95%;
+							margin: 0 auto;
+						}
+						.slider {
+							width: 100%;
+							margin: 20px auto;
+						}
+							.slide {
+								max-width: 480px;
+								width: 90%;
+								margin: 0 auto;
+								padding: 5px 0;
+							}
+							.slick-prev {
+								display: block !important;
+								position: absolute !important;
+								top: 0 !important;
+								left: -6px !important;
+								width: 20px !important;
+								height: 100% !important;
+								margin: 0 !important;
+								padding: 0 !important;
+							}
+							.slick-next {
+								display: block !important;
+								position: absolute !important;
+								top: 0 !important;
+								right: -6px !important;
+								width: 20px !important;
+								height: 100% !important;
+								margin: 0 !important;
+								padding: 0 !important;
+							}
+						.service-selector {
+							display: block;
+							width: 140px;
+							padding: 24px 0;
+							margin: 0 auto;
+						}
+							.service-selector .fa {
+								font-size: 30px;
+							}
+						#gallery .row {
+							margin-top: 12px;
+							margin-bottom: 12px;
+						}
+							#gallery .col {
+								margin-top: 0;
+								margin-bottom: 0;
+							}
+								#gallery .album {
+									max-width: 480px;
+									margin: 12px auto;
+									padding: 10px 0;
+								}
+								#gallery .album h4 {
+									padding: 0 10px;
+								}
